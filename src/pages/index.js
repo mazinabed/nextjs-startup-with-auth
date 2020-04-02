@@ -1,10 +1,18 @@
+import Signin from '../pages/signin'
+import Nav from '../components/Nav'
 
 export default function Index() {
 
     return (
-
-        <div>
-            home page
+<>
+<Nav/>
+        <div className="container">
+            <div className="row">
+                <div className="col">
+                
+                </div>
+            </div>
         </div>
+        </>
     )
 }
