@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
+import ProfileNav from '../components/ProfileNave'
 
 
 
@@ -24,9 +25,16 @@ axios
 
 
     return(
+
 <>
-    <div>
-        <h1>This is your profile page</h1>
+<ProfileNav/>
+    <div className="container">
+        <div className="row">
+            <div className="col-12">
+            <h1>This is your profile page</h1>
+            </div>
+        </div>
+        
     </div>
 </>
 
