@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "Maha1984",
-    "database": "nextjs_db",
+    "password": "yourpassword",
+    "database": "yourdatabase",
     "host": "localhost",
     "dialect": "mysql",
     "operatorsAliases": false

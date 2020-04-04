@@ -27,6 +27,9 @@ Then start the app in development mode:
 
 npm run dev
 
+CSS:
+All customs css go into _app.js file. (see CSS folder that has css customatzied css). 
+
 Configuring
 For configeration, create file name  (next.config.js). The file should look similar to below configs. 
 module.exports = {
@@ -40,6 +43,9 @@ module.exports = {
         "secretkey": "your secrectKey gose here",
     }
 }
+
+Authentication:
+Use auth.js file to secure your api routes. Simply import the auth.js file to the api that you want to secure and use (if(!Auth(req, res)) return;).(See Profile.js as example). 
 
 This starter is using Mysql database so create you database and create your tables (I recommend in your terminal (Node)) 
 Node
