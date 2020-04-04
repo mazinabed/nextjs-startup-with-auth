@@ -1,4 +1,5 @@
 # nextjs-startup-with-auth
+![](images/image1.png)
 About
 Next.js is a framework that makes it easy to create 'universal' React apps - React apps that do both client and server side rendering.
 
