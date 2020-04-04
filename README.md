@@ -47,3 +47,5 @@ Node
 const db = require('./models')
 db.sequelize.sync()
 This will create tables. 
+![](images/image2.png)
+
