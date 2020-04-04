@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    const User = sequelize.define('User', {
+    const user = sequelize.define('User', {
       // The email cannot be null, and must be a proper email before creation
       id: {
         type: DataTypes.INTEGER(11),
@@ -43,5 +43,5 @@ module.exports = function(sequelize, DataTypes) {
     //     onDelete: "cascade"
     //   });
     // };
-    return User
+    return user
   }

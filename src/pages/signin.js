@@ -2,7 +2,8 @@ import React, { useState, useReducer } from "react";
 import Router from 'next/router';
 import Link from 'next/link'
 import axios from 'axios'
-import Nav from '../components/Nav'
+import Layout from "../components/Layout";
+import Footer from '../components/Footer'
 
 
 function Signin() {
@@ -12,8 +13,7 @@ function Signin() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log("username is " + email);
-    console.log("password is " + password);
+    
     //call api
     return axios
       .post('/api/signin', {
@@ -44,17 +44,18 @@ function Signin() {
   };
 
   return (
-    <>
-    <Nav/>
-    <div className="container">
+    <Layout>
+      <div className="container">
       <div className="row">
         <div className="col">
-        <div>
+  
+          <div>
+          <h5>Please Sign in!</h5>
+          </div>
       
       <form onSubmit={handleSubmit}>
-        <div  className="container mt-3 px-5">
-          <div className="form-group">
-            <div className="col" size="6">
+      <div className="form-group">
+                <div className="col-6">
               <input
                 className="form-control"
                 type="text"
@@ -64,8 +65,8 @@ function Signin() {
               />
             </div>
           </div>
-          <div  className="form-group">
-            <div className="col" size="6">
+          <div className="form-group">
+                <div className="col-6">
               <input
                 className="form-control"
                 type="password"
@@ -75,13 +76,12 @@ function Signin() {
               />
             </div>
           </div>
+          <div className="col-6">
           <button className="btn btn-success" type="submit">
           {loginError && <p style={{color: 'red'}}>{loginError}</p>}
             Submit
           </button>
-        </div>
-        <br/>
-        <br/>
+          </div>
         
       </form>
      
@@ -90,8 +90,10 @@ function Signin() {
         </div>
        
       </div>
-    </div>
-</>
+  <Footer></Footer>
+    </Layout>
+    
+
 
   );
 }

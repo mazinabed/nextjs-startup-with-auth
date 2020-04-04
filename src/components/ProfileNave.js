@@ -1,7 +1,15 @@
 
 export default function Index() {
     return(
-<div class="jumbotron"></div>
+<div className="jumbotron">
+<button
+            onClick={() => {
+              localStorage.clear('token');
+              window.location=('/');
+            }}>
+            Logout
+          </button>
+</div>
 
     )
 }
