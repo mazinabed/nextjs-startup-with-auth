@@ -1,4 +1,5 @@
 # nextjs-startup-with-auth
+![](images/image1.png)
 About
 Next.js is a framework that makes it easy to create 'universal' React apps - React apps that do both client and server side rendering.
 
@@ -52,3 +53,6 @@ Node
 const db = require('./models')
 db.sequelize.sync()
 This will create tables. 
+![](images/image2.png)
+![](images/image3.png)
+
