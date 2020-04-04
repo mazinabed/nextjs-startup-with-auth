@@ -5,7 +5,7 @@ Next.js is a framework that makes it easy to create 'universal' React apps - Rea
 
 With Next.js, React pages are automatically rendered on both client and server side, without the hassle of setting up dependancies like webpack, babel or express and with automatic routing and without the constraints of projects like Create React App.
 
-Nextjs-startup-with-auth is a starter project that provides an example of how to use Next.js without the need for  Express, instead using API for the routes (The power of Next.js).For the Authentication, this starter app is using jwt(https://jwt.io/).
+Nextjs-startup-with-auth is a starter project that provides an example of how to use Next.js without the need for  Express, instead using API for the routes (The power of Next.js).For the Authentication, this starter app is using jwt(https://jwt.io/). The application has a signin /signup pages. 
 
 This project exists to make it easier to get started and create a production app in Next.js. You are invited to use it as a reference or to copy it and use it as a base for your own projects. Contributions to improve this project are welcome.
 
